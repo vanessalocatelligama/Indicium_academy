@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: erp
+    description: Replic from Northwind databank
+    schema: erp_northwind
+    tables:
+      - name: orders
+        description: uma linha por pedido. Inclui linhas vazias
+        columns:
+          - name: order_id
+            description: uma linha por pedido.
+            tests: 
+              - unique
+              - not_null
+              
+      - name: products
+
+      - name: categories
+
+      - name: suppliers
